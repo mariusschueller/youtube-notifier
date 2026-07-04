@@ -57,7 +57,7 @@ If you prefer to run the script locally on your own computer or server:
    ```
 3. Install dependencies:
    ```bash
-   pip install python-dotenv
+   pip install -r requirements.txt
    ```
 
 ### 2. Configuration
