@@ -8,7 +8,7 @@ It parses the raw HTML of the YouTube channel's `/videos` page, extracts the lat
 
 ## ⚡ Quick Start: Deploy with GitHub Actions (Recommended)
 
-You can run this notifier **100% free** and without a local server using **GitHub Actions**. It will run automatically on GitHub's servers on an hourly schedule.
+You can run this notifier **100% free** and without a local server using **GitHub Actions**. It will run automatically on GitHub's servers on a daily schedule.
 
 ### Step 1: Create a Private GitHub Repository
 1. Create a **private** repository on GitHub (to keep your configuration and logs private).
@@ -36,7 +36,7 @@ To keep your email credentials secure, do **not** upload a `.env` file to GitHub
      > 4. Generate a new password (e.g., name it "YouTube Notifier") and copy the 16-character password (without spaces).
 
 ### Step 3: Run & Schedule
-- **Automated:** The workflow in [.github/workflows/check_youtube.yml](file:///.github/workflows/check_youtube.yml) is set to run automatically at the start of every hour.
+- **Automated:** The workflow in [.github/workflows/check_youtube.yml](file:///home/marius/Documents/Maryson/YoutubeNotifier/.github/workflows/check_youtube.yml) is set to run automatically every day at 4:00 PM Central Time (21:00 UTC / 3:00 PM CST).
 - **Manual Trigger:** You can trigger the script manually at any time by going to the **Actions** tab in your repository, selecting **Check YouTube Uploads**, and clicking **Run workflow**.
 
 ---
