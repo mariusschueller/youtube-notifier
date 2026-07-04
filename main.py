@@ -6,9 +6,9 @@ from email.mime.text import MIMEText
 
 load_dotenv()
 
-channels = os.environ.get("channels").split(",")
-email = os.environ.get("email")
-password = os.environ.get("app_password")
+channels = [c.strip().strip("'\"") for c in os.environ.get("channels", "").split(",") if c.strip()]
+email = os.environ.get("email", "").strip().strip("'\"")
+password = os.environ.get("app_password", "").strip().strip("'\"")
 
 for channel in channels:
     print("checking " + channel)
